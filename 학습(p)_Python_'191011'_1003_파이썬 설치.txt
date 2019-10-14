@@ -1,0 +1,16 @@
+파이썬 설치하기
+
+ 공식 홈페이지의 다운로드 페이지(http://www.python.org/downloads) 에서 다운로드
+ 파이썬이 어느 곳에서든지 실행될 수 있도록 "Add Python 3.7 to PATH" 옵션을 반드시 선택해야 한다.
+
+ 리눅스
+  파이썬 설치
+  sudo apt-get update
+  sudo apt-get upgrade python3
+  sudo apt-get install python3.6 (3.6 버전 인스톨)
+
+  sudo update-alternatives -install /usr/bin/python3 python3 /usr/bin/python3.5 1
+  sudo update-alternatives -install /usr/bin/python3 python3 /usr/bin/python3.6 2
+  sudo update-alternatives -config python3
+ 
+  

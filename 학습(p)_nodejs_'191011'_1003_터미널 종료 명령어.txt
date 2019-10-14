@@ -1,0 +1,7 @@
+터미널 종료
+1. exit 재접속 창으로
+2. halt 시스템 종료
+3. reboot 시스템 재부팅 명령
+4. shutdown 시스템 재부팅 (옵션이 다양하다)
+
+참고: http://blog.naver.com/PostView.nhn?blogId=comlo1&logNo=221235686759&from=search&redirect=Log&widgetTypeCall=true&directAccess=false

@@ -1,0 +1,15 @@
+깃허브 설치
+
+http://git-scm.com/
+공식 배포 사이트
+
+설치
+ 리눅스의 경우
+  sudo apt-get install git
+
+기본 설정
+ 시작 - git - git bash
+ 명령어 입력: 
+  git config --global user.name "사용자 이름"
+  git config --global user.email "이메일"
+ 

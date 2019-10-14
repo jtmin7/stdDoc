@@ -1,0 +1,10 @@
+파일 생성, 기록, 삭제 하기
+
+파일 객체 생성
+ const fs = require('fs');
+ 
+파일 조종
+ fs.writeFile('test.txt', 'hello', (err)=> {
+   if(err) throw err;
+   console.log('File write completed');
+ });

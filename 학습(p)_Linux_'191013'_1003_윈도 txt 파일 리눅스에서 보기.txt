@@ -1,0 +1,15 @@
+윈도 txt 파일 리눅스에서 보기
+
+# tofrodos 패키지 설치
+sudo apt-get install tofrodos
+
+# 윈도우에서 만든 my_win_file.txt를 리눅스 형식으로 변환
+fromdos my_win_file.txt
+
+# 리눅스에서 만든 my_lin_file.txt를 윈도우 형식으로 변환
+todos my_lin_file.txt
+
+# 윈도우에서 만든 my_win_file.txt를 리눅스 형식으로, 백업 파일 생성
+fromdos -b my_win_file.txt
+
+http://bahndal.egloos.com/589321

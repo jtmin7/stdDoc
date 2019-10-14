@@ -1,0 +1,6 @@
+### 텍스트 복사, 붙여넣기  
+****
+* 복사: Ctrl + Insert   
+* 붙여넣기: Shift + Insert
+> Insert는 DEL 버튼 위에 있는 INS 이다
+[참조 사이트](https://hwwwi.tistory.com/15 "  ")
