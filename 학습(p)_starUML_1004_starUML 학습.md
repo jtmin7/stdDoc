@@ -1,15 +1,15 @@
-### StarUML study  
+## StarUML study  
 ![주요 도구](./image/mainWindow.png)
 ![01](./image/img01.PNG)
 ![01](./image/img02.PNG)
 ![01](./image/img03.PNG)
 ![01](./image/img04.PNG)
  
-##### shortcut key  
+### shortcut key  
 * Ctrl + Shift + R : Auto Resize  
 ![shortCutKey](./image/shortCutKey.png)  
   
-##### sequential diagram  
+### sequential diagram  
 * Interactions(Advanced)   
   * Combined fragment  
     * specific interacted operator   
