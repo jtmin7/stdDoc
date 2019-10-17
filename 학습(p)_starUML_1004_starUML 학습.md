@@ -5,8 +5,10 @@
 ![01](./image/img03.PNG)
 ![01](./image/img04.PNG)
  
-Ctrl + Shift + R
-
+##### shortcut key  
+* Ctrl + Shift + R : Auto Resize  
+![shortCutKey](./image/shortCutKey.png)  
+  
 ##### sequential diagram  
 * Interactions(Advanced)   
   * Combined fragment  
