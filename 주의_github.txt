@@ -1,6 +1,13 @@
 '19.10.11.(목)
 처음 리파지토리를 만들고 커밋 하기 전까지는 브랜치가 만들어 지지 않는다. 
-때문에 git branch 를 입력해도 아무 반응이 없다. 
-
+때문에 git branch 를 입력해도 아무 반응이 없다.   
 checkout 하기 전에 commit -a 해주어야 한다. 특히 'a' 옵션을 넣어서 해주지 않으면
 안되는 경우가 있다
+
+---
+## git push/ git merge (원격에 있는거 받으려 할때)  
+Git push가 안되는 경우 (fatal: refusing to merge unrelated histories)   
+* git pull origin 브런치명 --allow-unrelated-histories  
+> --allow-unrelated-histories   이 명령 옵션은 이미 존재하는 두 프로젝트의 기록(history)을 저장하는 드문 상황에 사용
+[참조](https://gdtbgl93.tistory.com/63)  
+---

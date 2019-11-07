@@ -1,0 +1,91 @@
+### 로컬 저장소 사용
+
+* 로컬저장소 생성  
+  git init  
+---  
+* 커밋  
+  cat hello.py (내용 print("hello"))  
+  python hello.py   
+  git add hello.py (tracking)  
+  git status  
+    * add 옵션  
+      * u: 하나 이전의 스테이지와 비교해서 변경된 부분만 add한다. 새롭게 만들어진 파일은 안된다  
+      * A: 새로 만든 것, 수정, 삭제 등 모든 변경된 파일을 add 해주게 된다    
+    * 커밋명: "new - file upload"   
+    
+    * git commit (메시지 편집기에서 vim 입력후 저장종료:wq) (이거 할때까지 checkout 불가)  
+    * git commit -a (저장소 파일 모두 커밋 옵션) (새로운 파일이 생기면 그때는 add 로 tracking 해주고 해야 한다  
+    * git commit -am "커밋메시지"   
+---
+ * 브랜치  
+  git branch (현 브랜치 확인) (브랜치 중 앞에 '*'표시가 있는게 있는데 이는 현제 작업중인 브랜치 의미)  
+  git branch hotfix (브랜치 생성)  
+  git checkout hotfix (해당 브랜치로 이동)  
+  git checkout -b hotfix (브랜치를 만들면서 동시에 채크아웃)  
+  브랜치명: new/testingNode (특수문자는 / 외에는 들어가면 안된다)  
+
+  >git checkout master  
+  git merge [마스터와병합할브랜치이름]  (p.6L[독립성 확인까지])  
+---
+* 기록 보기  
+  git log --graph  
+---
+* 원격저장소 생성  
+  mkdir github_tutorial  
+  cd github_tutorial  
+  git clone https://github.com/github/사용자이름/study.git  
+  cd study  
+---
+* 원격저장소 연결  
+  *(준비)*  
+  mkdir github_tutorial  
+  git init (로컬 저장소를 미리 생성해야 한다)  
+  *(핵심)*  
+  git remote add 별칭 https://github.com/이름/저장소이름.git  
+  git remote -v (이걸로 잘 됐나 확인)  
+---
+* 원격저장소 push  
+  *(준비)*  
+  원격에서 아무것도 없는 리파지토리 만든다  
+  로컬에 원격저장소 연결한다 (remote)  
+  로컬에서 README.md 파일 만든다  
+  add, commit 해주고  
+  *(핵심)*  
+  git push origin(별칭) master(푸시할 브랜치)  
+---
+* 원격저장소에서 데이타 가져오기  
+  *(준비)*  
+  원격에서 충돌 일으킬 파일 수정, 커밋  
+  로컬에서 충돌 일으킬 파일 수정, 커밋, 푸시 (애러 난다)  
+  *(핵심)*  
+  git fetch (원격에서 충돌 일으킨 브랜치 가져오자 원격의 커밋정보 가져온다)  
+  git status (상태 확인)  
+  git branch -a (모든 브랜치[로컬,원격]를 확인할 수 있다  
+  git merge (enter하지 않고 spacebar 누르고 tab 하면 병합 가능 리스트가 뜬다)  
+---
+* 충돌 해결하기  
+  *(핵심)*  
+  충돌 발생 시 이 명령으로 확인  
+  git diff (브랜치간 차이 보여준다) (이걸 보고 수정하자)  
+  *(수정하고 나서)*  
+  git commit -am "..."  
+  git push origin master 해보자  
+---
+* 커밋 내역 되돌리기  
+  git reset --soft HEAD~~~(~은 최근 이거 갯수만큼 커밋 되돌린다)  
+		(soft 옵션은 커밋 내역만 바꾼다. hard 와 mixed도 있다)  
+---
+* gitbash 에서 계정 확인, 바꾸기  
+  * 계정 확인  
+    git config user.name  
+    git config user.email  
+  * 계정 바꾸기  
+    git config --global user.name 신계정  
+    git config --global user.email 신이메일  
+  * ssh keys 값 새로 생성  
+    1. ssh-keygen -t rsa -b 4096 -C "새이메일"  
+    <위 값 클립보드에 복사>  
+    1. clip <~/.ssh/id_rsa.pub  
+    1. GIthub에  setting에 들어가  
+    1. SSH keys 에 붙여넣기 하고 추가를 해줍니다  
+[참조싸이트](https://meaownworld.tistory.com/78)  
